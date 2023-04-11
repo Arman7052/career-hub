@@ -4,7 +4,7 @@ import Navbar from './Header/Navbar';
 
 const App = () => {
   return (
-    <div>
+    <div className=''>
       <Navbar></Navbar>
       <Outlet></Outlet>
     </div>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const AppliedJobs = () => {
     return (
-        <div>
+        <div className='px-20 pt-5'>
            
             <h1>Applied Jobs </h1>
             

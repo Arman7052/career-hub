@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const FeaturedJobs = ({featuredJobs}) => {
     console.log(featuredJobs)
-    const {company_logo,job_title,company_name,remote_or_onsite,fulltime_or_parttime,location,salary} = featuredJobs;
+    const {id,company_logo,job_title,company_name,remote_or_onsite,fulltime_or_parttime,location,salary} = featuredJobs;
     return (
         <div className=' border border-gray-500 rounded-lg'>
             <div className='p-5'><img className=' h-14' src={company_logo} alt="" /></div>
@@ -28,7 +28,7 @@ const FeaturedJobs = ({featuredJobs}) => {
                 </div>
             </div>
             <div className='text-start p-4'>
-               <Link >
+               <Link to={`/JobDetails/${id}`}>
                <button className=' bg-indigo-400 p-3 rounded-lg text-white font-bold w-40'>View Details</button></Link>
             </div>
         </div>

@@ -37,8 +37,7 @@ const Statistics = () => {
         }
     ];
 
-    const colors = ['#ff7f50', '#00ffff', '#ffd700', '#ff6347', '#9acd32', '#7b68ee', '#b22222', '#32cd32'];
-
+  
     const customAxisTick = ({ payload, x, y, textAnchor, stroke }) => (
         <g transform={`translate(${x},${y})`}>
             <text
@@ -102,5 +101,5 @@ const Statistics = () => {
 
 export default Statistics;
 
-
+ 
 

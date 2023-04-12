@@ -4,7 +4,7 @@ import FeaturedJobs from './FeaturedJobs';
 
 const ShowJobs = () => {
     const typeOfJob = useLoaderData();
-    console.log(typeOfJob)
+    // console.log(typeOfJob) 
     return (
         <div>
             <div className='text-center py-20 mx-20'>

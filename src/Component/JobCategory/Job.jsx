@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Job = ({job}) => {
-    console.log(job)
+    // console.log(job)
     const {id,logo,name,jobs_available} = job;
     return (
         <div className=' bg-blue-50 lg:h-42  lg:w-80 gap-4 lg:mx-10 rounded-lg'>

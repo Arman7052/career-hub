@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter , } from 'react-router-dom'
 import Home from './Home'
 import Statistics from './Statistics'
 import AppliedJobs from './AppliedJobs'
@@ -17,7 +17,8 @@ const router = createBrowserRouter([
 
     {
       path:'/',
-      element: <Home></Home>
+      element: <Home></Home>,
+      loader: () => fetch('/featured-jobs.json')
     },
     {
       path: '/Statistics',

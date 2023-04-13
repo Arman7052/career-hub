@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const FeaturedJobs = ({featuredJobs}) => {
-    // console.log(featuredJobs)
-    const {id,company_logo,job_title,company_name,remote_or_onsite,fulltime_or_parttime,location,salary} = featuredJobs;
+const FeaturedJobs = ({typeOfJob}) => {
+    console.log(typeOfJob)
+    const {id,company_logo,job_title,company_name,remote_or_onsite,fulltime_or_parttime,location,salary} = typeOfJob;
     return (
         <div className=' border border-gray-500 rounded-lg'>
             <div className='p-5'><img className=' h-14' src={company_logo} alt="" /></div>
@@ -28,7 +28,7 @@ const FeaturedJobs = ({featuredJobs}) => {
                 </div>
             </div>
             <div className='text-start p-4'>
-               <Link to={`/Job/${id}`}>
+               <Link to={`/Jobs/${id}`}>
                <button className=' bg-indigo-400 p-3 rounded-lg text-white font-bold w-40'>View Details</button></Link>
             </div>
         </div>

@@ -8,25 +8,32 @@ import Statistics from './Statistics'
 import AppliedJobs from './AppliedJobs'
 import Blog from './Blog'
 import JobDetails from './Component/JobDeatails/JobDetails'
+import FirstPage from './FirstPage'
+import ShowJobs from './Component/FeaturedJobs/ShowJobs'
 
 
 const router = createBrowserRouter([
 
 {
   path:'/',
-  element: <App></App>,
+  element: <Home></Home>,
   children: [
 
     {
       path:'/',
-      element: <Home></Home>,
-      loader: () => fetch('/featured-jobs.json')
+      element: <FirstPage></FirstPage>,
       
     },
     {
-      path:'/job/:id',
+      path:'/ShowJobs',
+      element: <ShowJobs></ShowJobs>,
+     
+      
+    },
+    {
+      path:'/jobs/:jobid',
       element: <JobDetails></JobDetails>,
-      loader: ({params}) => fetch(`/featured-jobs.json/${params.id}`)
+      
     },
     {
       path: '/Statistics',

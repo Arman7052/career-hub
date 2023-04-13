@@ -56,11 +56,13 @@ const Statistics = () => {
     const averageMark = data.reduce((total, item) => total + item.mark, 0) / data.length;
 
     return (
-        <div className='py-10 text-center bg-indigo-50'>
+        <div className='py-10 pb-20 text-center bg-indigo-50'>
             <div>
-                <h1 className=' py-5 text-4xl'>This page shows marks gained in Assignments</h1>
+                <h1 className=' py-5 text-2xl lg:text-4xl font-bold'>This page shows marks gained in Assignments</h1>
             </div>
-
+            <div>
+                <p className=' text-xl lg:text-3xl  text-indigo-300'>Average Mark: <span className=' font-bold  text-gray-400'>{averageMark.toFixed(2)}</span></p>
+            </div>
 
             <ResponsiveContainer width="100%" aspect={2}>
                 <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data}>
@@ -92,9 +94,7 @@ const Statistics = () => {
                     <Tooltip label="mark" ></Tooltip>
                 </RadarChart>
             </ResponsiveContainer>
-            <div>
-                <p className=' text-3xl '>Average Mark: {averageMark.toFixed(2)}</p>
-            </div>
+           
         </div>
     );
 };

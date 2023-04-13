@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 const Blog = () => {
     return (
         <div className='px-20 py-10 pb-20 bg-indigo-50'>

@@ -1,14 +1,12 @@
 import React from 'react';
-import Banner from './Component/Banner/Banner';
-import JobCategory from './Component/JobCategory/JobCategory';
-import ShowJobs from './Component/FeaturedJobs/ShowJobs';
+import { Outlet } from 'react-router-dom';
+import Navbar from './Header/Navbar';
 
 const Home = () => {
     return (
         <div className=''>
-            <Banner></Banner>
-            <JobCategory></JobCategory>
-            <ShowJobs></ShowJobs>
+            <Navbar></Navbar>
+            <Outlet></Outlet>
         </div>
     );
 };

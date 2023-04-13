@@ -40,12 +40,12 @@ const Navbar = () => {
                   isMenuOpen ? 'block' : 'hidden'
                 } w-full lg:block lg:flex lg:items-center lg:w-auto`}
               >
-                <ul className='text-gray-800 lg:flex-grow lg:flex lg:items-center lg:justify-end'>
+                <ul className='text-gray-400 lg:flex-grow lg:flex lg:items-center lg:justify-end'>
                   <li className='block lg:inline-block lg:mt-0 text-lg mr-4'>
                     <Link
                       to='/'
                       onClick={handleMenuClick}
-                      className='text-gray-800 hover:text-indigo-400'
+                      className='text-gray-400 hover:text-indigo-400'
                     >
                       Home
                     </Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
                     <Link
                       to='/statistics'
                       onClick={handleMenuClick}
-                      className='text-gray-800 hover:text-indigo-400'
+                      className='text-gray-400 hover:text-indigo-400'
                     >
                       Statistics
                     </Link>
@@ -63,7 +63,7 @@ const Navbar = () => {
                     <Link
                       to='/AppliedJobs'
                       onClick={handleMenuClick}
-                      className='text-gray-800 hover:text-indigo-400'
+                      className='text-gray-400 hover:text-indigo-400'
                     >
                       Applied Jobs
                     </Link>
@@ -72,7 +72,7 @@ const Navbar = () => {
                     <Link
                       to='/blog'
                       onClick={handleMenuClick}
-                      className='text-gray-800 hover:text-indigo-400'
+                      className='text-gray-400 hover:text-indigo-400'
                     >
                       Blog
                     </Link>
